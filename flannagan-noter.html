@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <article>
+    <h1>Flannagan noter: Objekter</h1>
+    <p>Efteråret 2018</p>
+  </article>
+  <div id="resultat"></div>
+
+  <script>
+    'use strict';
+
+    /**
+     * eksperimenter mee Objekter
+     * mens jeg læser Flanagans bog
+     * om JavaScript
+     **/
+
+     // objektet
+     let aBook = {
+       title: "WordPress in the Classroom",
+       author: "Per Thykjær Jensen",
+       year: 2018,
+       edition: 2
+     };
+
+    // get values by dot notation
+     console.log(aBook.title
+       + " by: " + aBook.autho
+       + " (" + aBook.year + ")");
+
+    // loop it out
+    for (var key in aBook) {
+      if (aBook.hasOwnProperty(key)) {
+        console.log(key + ": " + aBook[key]);
+      }
+    }
+
+  </script>
+</body>
+</html>
